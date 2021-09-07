@@ -1,0 +1,19 @@
+digraph G {
+"panda_link8" -> "panda_hand"[label=" Broadcaster: /robot_state_publisher\nAverage rate: 10000.0\nBuffer length: 0.0\nMost recent transform: 0.0\nOldest transform: 0.0\n"];
+"panda_link7" -> "panda_link8"[label=" Broadcaster: /robot_state_publisher\nAverage rate: 10000.0\nBuffer length: 0.0\nMost recent transform: 0.0\nOldest transform: 0.0\n"];
+"panda_link6" -> "panda_link7"[label=" Broadcaster: /robot_state_publisher\nAverage rate: 50.0\nBuffer length: 4.96\nMost recent transform: 209.602\nOldest transform: 204.642\n"];
+"world" -> "panda_link0"[label=" Broadcaster: /robot_state_publisher\nAverage rate: 10000.0\nBuffer length: 0.0\nMost recent transform: 0.0\nOldest transform: 0.0\n"];
+"world" -> "camera_link"[label=" Broadcaster: /camera_link_broadcaster\nAverage rate: 10.175\nBuffer length: 4.914\nMost recent transform: 209.655\nOldest transform: 204.741\n"];
+"panda_hand" -> "panda_leftfinger"[label=" Broadcaster: /robot_state_publisher\nAverage rate: 50.0\nBuffer length: 4.96\nMost recent transform: 209.602\nOldest transform: 204.642\n"];
+"panda_hand" -> "panda_rightfinger"[label=" Broadcaster: /robot_state_publisher\nAverage rate: 50.0\nBuffer length: 4.96\nMost recent transform: 209.602\nOldest transform: 204.642\n"];
+"panda_link0" -> "panda_link1"[label=" Broadcaster: /robot_state_publisher\nAverage rate: 50.0\nBuffer length: 4.96\nMost recent transform: 209.602\nOldest transform: 204.642\n"];
+"panda_link1" -> "panda_link2"[label=" Broadcaster: /robot_state_publisher\nAverage rate: 50.0\nBuffer length: 4.96\nMost recent transform: 209.602\nOldest transform: 204.642\n"];
+"panda_link2" -> "panda_link3"[label=" Broadcaster: /robot_state_publisher\nAverage rate: 50.0\nBuffer length: 4.96\nMost recent transform: 209.602\nOldest transform: 204.642\n"];
+"panda_link3" -> "panda_link4"[label=" Broadcaster: /robot_state_publisher\nAverage rate: 50.0\nBuffer length: 4.96\nMost recent transform: 209.602\nOldest transform: 204.642\n"];
+"panda_link4" -> "panda_link5"[label=" Broadcaster: /robot_state_publisher\nAverage rate: 50.0\nBuffer length: 4.96\nMost recent transform: 209.602\nOldest transform: 204.642\n"];
+"panda_link5" -> "panda_link6"[label=" Broadcaster: /robot_state_publisher\nAverage rate: 50.0\nBuffer length: 4.96\nMost recent transform: 209.602\nOldest transform: 204.642\n"];
+edge [style=invis];
+ subgraph cluster_legend { style=bold; color=black; label ="view_frames Result";
+"Recorded at time: 209.621"[ shape=plaintext ] ;
+}->"world";
+}
